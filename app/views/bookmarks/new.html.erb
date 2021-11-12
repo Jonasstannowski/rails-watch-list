@@ -1,5 +1,7 @@
-<%= form_for(@bookmark) do |f| %>
+<%= form_for([@list, @bookmark]) do |f| %>
   <%= f.label :comment %>
   <%= f.text_field :comment %>
+  <%= f.label :movie_id %>
+  <%= f.text_field :movie_id %>
   <%= f.submit %>
 <% end %>
